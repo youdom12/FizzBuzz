@@ -1,0 +1,19 @@
+	var count;
+	var max = 100;
+  var stringPlaceHolder = "";
+	for(count = 1; count <= max; count++){
+		if (count == 1){
+			stringPlaceHolder += count;
+			continue;
+		}//end if statement
+		if (count%3 == 0){
+			stringPlaceHolder += "Fizz";
+		}//end if statement
+		if (count%5 == 0){
+			stringPlaceHolder += "Buzz";
+		}//end if statement
+		if (count%5 != 0 && count %3 != 0){
+			stringPlaceHolder += count;
+		}//end if statement
+	}// end for loop
+  console.log(stringPlaceHolder);
